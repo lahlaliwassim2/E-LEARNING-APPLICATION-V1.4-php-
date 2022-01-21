@@ -1,0 +1,74 @@
+.main-colo{
+    background: linear-gradient( 90deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+}
+.form-main{
+    border-radius: 30px;
+    max-width: 375px;
+}
+.clm3{
+    min-width: fit-content; 
+    max-width: 270px;
+    background-color :#FAFFC1;
+}
+.cls1{
+    background-color: #F0F9FF;;
+}
+.cls2{
+    background-color:  #FEF6FB;
+}
+.cls3{
+    background-color:  #FEFBEC;
+}
+.cls4{
+    background-image: linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
+.btnA   a{
+    text-decoration: none;
+    color: #F0F9FF;
+}
+.list1{
+    max-width: 190px;
+    text-decoration: auto;
+    cursor: pointer;
+    list-style: none;
+    
+}
+.list1 ul li a {
+    text-decoration: none;
+}
+.list1 ul li {
+    background-color: #FAFFC1;
+}
+.cl{
+    position: absolute;
+     bottom: 15px; 
+     max-width: 270px;
+}
+.img{
+    width: 100px;
+     height: 100px;
+}
+.lgt{
+    position: absolute;
+     bottom: 15px;
+      max-width: 270px;
+}
+.imgg img {
+    width: 100px;
+}
+@media (min-width: 576px)
+{
+    .clm3 {
+        min-width: fit-content;
+        max-width: initial;
+        background-color: #FAFFC1;
+    }
+}
+@media (min-width: 300px)
+{
+    .clm3 {
+        min-width: fit-content;
+        max-width: initial;
+        background-color: #FAFFC1;
+    }
+}
