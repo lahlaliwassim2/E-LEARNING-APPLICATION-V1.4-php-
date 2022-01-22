@@ -2,8 +2,8 @@
  $tableaupay = [
      [
         'Name' => 'wassim',
-        'payment_schedual' => 'wass',
-        'bill_number' => '000',
+        'payment_schedual' => 'first',
+        'bill_number' => '00012223',
         'amount_paid' => 'DHS 100,000',
         'balance_amount' => 'DHS 500,000',
         'date' => '05-Jan, 2022',
@@ -11,9 +11,9 @@
 
      ] ,
       [
-        'Name' => 'mohamad',
-        'payment_schedual' => 'moh',
-        'bill_number' => '123',
+        'Name' => 'yahya',
+        'payment_schedual' => 'first',
+        'bill_number' => '00012223',
         'amount_paid' => 'DHS 100,000',
         'balance_amount' => 'DHS 500,000',
         'date' => '05-Jan, 2022',
@@ -21,8 +21,8 @@
 
      ] ,
       [
-        'Name' => 'bilal',
-        'payment_schedual' => 'bil',
+        'Name' => 'nouredine',
+        'payment_schedual' => 'first',
         'bill_number' => '00012223',
         'amount_paid' => 'DHS 100,000',
         'balance_amount' => 'DHS 500,000',
@@ -31,12 +31,12 @@
 
      ] , 
      [
-        'Name' => 'yahya',
-        'payment_schedual' => 'yah',
-        'bill_number' => '00012223',
-        'amount_paid' => 'DHS 100,000',
-        'balance_amount' => 'DHS 500,000',
-        'date' => '05-Jan, 2022',
+      'Name' => 'mohemed',
+      'payment_schedual' => 'first',
+      'bill_number' => '00012223',
+      'amount_paid' => 'DHS 100,000',
+      'balance_amount' => 'DHS 500,000',
+      'date' => '05-Jan, 2022',
 
 
      ] 
