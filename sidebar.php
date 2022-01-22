@@ -17,7 +17,7 @@
             <div class="mx-auto my-5 list1">
               <ul class="list-group text-start mx-2">
                 <li class="list-group-item ps-3 bg-active rounded-3">
-                  <i class="bi bi-house-door me-2"></i> <a href="" class="active "> Home </a>
+                  <i class="bi bi-house-door me-2"></i> <a href="dashbords.php" class="active "> Home </a>
                 </li>
                 <li class="list-group-item ps-3">
                   <i class="bi bi-bookmark me-2"></i> <a href="" class="active"> Cours </a>

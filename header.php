@@ -1,4 +1,4 @@
-<div class="bg-white row align-items-center py-2">
+<div class=" bg-white row align-items-center py-2">
                 <div class="col-1">
                   <i class="bi bi-arrow-left-circle"></i>
                 </div>
