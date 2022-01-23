@@ -6,7 +6,7 @@
         'bill_number' => '00012223',
         'amount_paid' => 'DHS 100,000',
         'balance_amount' => 'DHS 500,000',
-        'date' => '05-Jan, 2022',
+        'date' => '05-Jan,2022',
 
 
      ] ,
@@ -16,7 +16,7 @@
         'bill_number' => '00012223',
         'amount_paid' => 'DHS 100,000',
         'balance_amount' => 'DHS 500,000',
-        'date' => '05-Jan, 2022',
+        'date' => '05-Jan,2022',
 
 
      ] ,
@@ -26,7 +26,7 @@
         'bill_number' => '00012223',
         'amount_paid' => 'DHS 100,000',
         'balance_amount' => 'DHS 500,000',
-        'date' => '05-Jan, 2022',
+        'date' => '05-Jan,2022',
 
 
      ] , 
@@ -36,7 +36,17 @@
       'bill_number' => '00012223',
       'amount_paid' => 'DHS 100,000',
       'balance_amount' => 'DHS 500,000',
-      'date' => '05-Jan, 2022',
+      'date' => '05-Jan,2022',
+
+
+     ] ,
+     [
+      'Name' => 'abdslem',
+      'payment_schedual' => 'first',
+      'bill_number' => '00012223',
+      'amount_paid' => 'DHS 100,000',
+      'balance_amount' => 'DHS 500,000',
+      'date' => '05-Jan,2022',
 
 
      ] 
@@ -44,11 +54,11 @@
             foreach($tableaupay as $tableau){
                 echo '<tr>
                 <td class="align-middle p-3">'.$tableau['Name'].'</td>
-                <td class="align-middle">f'.$tableau['payment_schedual'].'</td>
+                <td class="align-middle">'.$tableau['payment_schedual'].'</td>
                 <td class="align-middle">'.$tableau['bill_number'].'</td>
                 <td class="align-middle">'.$tableau['amount_paid'].'</td>
                 <td class="align-middle">'.$tableau['balance_amount'].'</td>
-                <td class="align-middle"'.$tableau['date'].'</td>
+                <td class="align-middle">'.$tableau['date'].'</td>
                 <td class="align-middle">
                   <span class="ms-4">
                     <svg

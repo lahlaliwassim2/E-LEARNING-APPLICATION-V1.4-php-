@@ -62,7 +62,7 @@
                             <th scope="col">Bill Number</th>
                             <th scope="col">Amount Paid</th>
                             <th scope="col">Balance amount</th>
-                            <th scope="col">Date</th>
+                            <th scope="col">date</th>
                             <th scope="col"></th>
                           </tr>
                         </thead>
