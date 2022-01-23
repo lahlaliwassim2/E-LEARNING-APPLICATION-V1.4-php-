@@ -16,7 +16,7 @@
     
                <?php include'sidebar.php' ?>
           
-            <div class="bg-light container-fluid m-0 col-md-9">
+            <div class="bg-light container-fluid m-0 col-md-10">
 
               <?php include 'header.php' ?>
 
