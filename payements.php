@@ -18,7 +18,7 @@
             <!--Sidbar -->
             <?php include'sidebar.php' ?>
             
-            <div class="bg-light container-fluid m-0 col-md-9">
+            <div class="bg-light container-fluid m-0 col-md-10">
                 <!-- header -->
                 <?php include'header.php' ?>
                 <div class="row align-items-center text-end py-1">
