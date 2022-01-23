@@ -19,7 +19,7 @@
 
         <?php include'sidebar.php' ?>
 
-        <div class="container-fluid m-0 col-md-9">
+        <div class=" m-0 col-md-10">
 
           <div class="row align-items-center mt-2">
             <div class="col-1">
