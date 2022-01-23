@@ -1,4 +1,4 @@
-<div class="vh-100 bg-sidebar col-md-3 col-sm 12 clm3">
+<div class="vh-100 bg-sidebar col-md-2 clm3">
           <svg class="ms-4 mt-3" width="152" height="39" viewBox="0 0 152 39" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
