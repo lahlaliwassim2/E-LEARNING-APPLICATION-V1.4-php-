@@ -6,8 +6,8 @@
     max-width: 375px;
 }
 .clm3{
-    min-width: fit-content; 
-    max-width: 200PX;
+    /* min-width: fit-content; 
+    max-width: 200PX; */
     background-color :#FAFFC1;
 }
 .cls1{
@@ -67,7 +67,7 @@
 @media(max-width : 300px))
 {
     .clm3 {
-        min-width: fit-content;
+        /* min-width: fit-content; */
         max-width: initial;
         background-color: #FAFFC1;
     }
