@@ -1,30 +1,7 @@
 <?php 
-    $tableaustudent = [
-    [
-         'Name' => 'wassim',
-         'Email' => 'wlahlali343@gmail.com',
-         'Phone' => '0655930708',
-         'Enroll_number' => '1234567305477760',
-         'Date_of_admission' => '08-Dec-2021',
-         
-    ] ,
-    [
-        'Name' => 'Yahya',
-        'Email' => 'ironstyle@gmail.com',
-        'Phone' => '0677665544',
-        'Enroll_number' => '1234567305477760',
-        'Date_of_admission' => '08-Dec-2021',
-        
-   ] ,
-   [
-    'Name' => 'mouad',
-    'Email' => 'sahra@gmail.com',
-    'Phone' => '7305477760',
-    'Enroll_number' => '1234567305477760',
-    'Date_of_admission' => '08-Dec-2021',
+    $tableaustudent = file_get_contents("tabstdjson.json");
+    $tableaustudent = json_decode($tableaustudent,true);
     
-] 
-   ] ;
    foreach($tableaustudent as $tableau){
         echo '
     <tr class="bg-white">
