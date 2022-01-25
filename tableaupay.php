@@ -1,57 +1,8 @@
 <?php 
- $tableaupay = [
-     [
-        'Name' => 'wassim',
-        'payment_schedual' => 'first',
-        'bill_number' => '00012223',
-        'amount_paid' => 'DHS 100,000',
-        'balance_amount' => 'DHS 500,000',
-        'date' => '05-Jan,2022',
-
-
-     ] ,
-      [
-        'Name' => 'yahya',
-        'payment_schedual' => 'first',
-        'bill_number' => '00012223',
-        'amount_paid' => 'DHS 100,000',
-        'balance_amount' => 'DHS 500,000',
-        'date' => '05-Jan,2022',
-
-
-     ] ,
-      [
-        'Name' => 'nouredine',
-        'payment_schedual' => 'first',
-        'bill_number' => '00012223',
-        'amount_paid' => 'DHS 100,000',
-        'balance_amount' => 'DHS 500,000',
-        'date' => '05-Jan,2022',
-
-
-     ] , 
-     [
-      'Name' => 'mohemed',
-      'payment_schedual' => 'first',
-      'bill_number' => '00012223',
-      'amount_paid' => 'DHS 100,000',
-      'balance_amount' => 'DHS 500,000',
-      'date' => '05-Jan,2022',
-
-
-     ] ,
-     [
-      'Name' => 'abdslem',
-      'payment_schedual' => 'first',
-      'bill_number' => '00012223',
-      'amount_paid' => 'DHS 100,000',
-      'balance_amount' => 'DHS 500,000',
-      'date' => '05-Jan,2022',
-
-
-     ] 
- ] ;
-            foreach($tableaupay as $tableau){
+ $tableaupay = file_get_contents("tabpayemjson.json");
+ $tableaupay = json_decode($tableaupay,true);
+ 
+           foreach($tableaupay as $tableau){
                 echo '<tr>
                 <td class="align-middle p-3">'.$tableau['Name'].'</td>
                 <td class="align-middle">'.$tableau['payment_schedual'].'</td>
