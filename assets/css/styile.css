@@ -1,6 +1,9 @@
 .main-colo{
     background: linear-gradient( 90deg, #00C1FE 19.39%, #FAFFC1 96.69%);
 }
+.height {
+    height: 72.8vh;
+}
 .form-main{
     border-radius: 30px;
     max-width: 375px;
@@ -16,6 +19,7 @@
 .cls2{
     background-color:  #FEF6FB;
 }
+
 .cls3{
     background-color:  #FEFBEC;
 }
@@ -25,6 +29,7 @@
 .btnA   a{
     text-decoration: none;
     color: #F0F9FF;
+    
 }
 .list1{
     max-width: 190px;
@@ -35,9 +40,18 @@
 }
 .list1 ul li a {
     text-decoration: none;
+    color: black;
+}
+.list1 ul li:hover{
+    background-color: #00C1FE;
 }
 .list1 ul li {
     background-color: #FAFFC1;
+    text-align: center;
+   
+}
+.list1 a {
+    color: #000;
 }
 .cl{
     position: absolute;
@@ -45,8 +59,8 @@
      max-width: 270px;
 }
 .img{
-    width: 100px;
-     height: 100px;
+    width: 8vh;
+     height: 8vh;
 }
 .lgt{
     position: absolute;
@@ -56,19 +70,5 @@
 .imgg img {
     width: 100px;
 }
-@media(max-width : 600px)
-{
-    .clm3 {
-        min-width: fit-content;
-        max-width: initial;
-        background-color: #FAFFC1;
-    }
-}
-@media(max-width : 300px))
-{
-    .clm3 {
-        /* min-width: fit-content; */
-        max-width: initial;
-        background-color: #FAFFC1;
-    }
-}
+
+
