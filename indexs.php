@@ -11,7 +11,7 @@
 </head>
 
 <body class="main-colo">
-  <main class="background p-2 vh-100 d-flex justify-content-center align-items-center ">
+  <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
     <form action="#" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -20,6 +20,7 @@
           fill="black" />
         <path d="M3 0L3 39" stroke="#00C1FE" stroke-width="6" />
       </svg>
+      
       <div class="text-center mt-5">
         <h1>SIGN IN</h1>
         <p class="text-secondary">

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="assets/css/styile.css" />
-    <title>Payement</title>
-  </head>
+<?php include'headder.php' ?>                       <!-- appel le fichier headder -->
   <body>
     <main>
    
@@ -16,13 +6,12 @@
        
             <div class="row">
             <!--Sidbar -->
-            <?php include'sidebar.php' ?>
+            <?php include'sidebar.php' ?>    
             
-            <div class="bg-light container-fluid m-0 col-md-10">
-                <!-- header -->
-                <?php include'header.php' ?>
+            <div class="bg-light container-fluid m-0 col-10 col-md-10">
+                <!-- barre recherche  -->
+                <?php include'barre_rech.php' ?>
                 <div class="row align-items-center text-end py-1">
-                    <!-- title -->
                     <div class="col-3 text-start">
                       <h2>Students list</h2>
                     </div>
@@ -53,7 +42,7 @@
                     </div>
                     <hr class="m-0" />
                     <!-- ta ble -->
-                    <div class="table-responsive">
+                    <div class="table-responsive ">
                       <table class="table table-striped table-borderless">
                         <thead>
                           <tr class="text-secondary">
