@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="assets/css/styile.css" />
-    <title>espace students</title>
-  </head>
+<?php include'headder.php' ?>
   <body>
     <main>
         <div class="container-fluid">
@@ -16,14 +6,14 @@
     
                <?php include'sidebar.php' ?>
           
-            <div class="bg-light container-fluid m-0 col-md-10">
+            <div class="bg-light container-fluid col-10 m-0 col-md-10">
 
-              <?php include 'header.php' ?>
+              <?php include 'barre_rech.php' ?>
 
               
               <div class="row align-items-center text-end py-1">
                 <div class="col-3 text-start">
-                  <h2>Students list</h2>
+                  <h1>Students list</h1>
                 </div>
   
                 <div class="col-5">
@@ -48,8 +38,10 @@
                     </defs>
                   </svg>
                 </div>
-                <div class="col-3">
-                  <button class="btn btn-info">ADD NEW STUDENT</button>
+                <div class="col-3 ">
+                  <button class="btn btn-info ">
+                    <span class="d-lg-none d-md-none">ADD</span>
+                   <span class="d-md-inline d-none d-lg-inline"> ADD NEW STUDENT</span></button>
                 </div>
               </div>
               <hr class="m-0" />
