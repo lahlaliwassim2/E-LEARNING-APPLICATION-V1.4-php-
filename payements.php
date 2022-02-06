@@ -12,14 +12,15 @@
                 <!-- barre recherche  -->
                 <?php include'barre_rech.php' ?>
                 <div class="row align-items-center text-end py-1">
-                    <div class="col-3 text-start">
+                    <div class="col-2 text-start">
                       <h2>Students list</h2>
                     </div>
+                    
       
                     <div class="col-8">
                     </div>
                     <div class="col-1">
-                      <svg
+                    <a href="ajouterpayments.php">  <svg
                         width="14"
                         height="22"
                         viewBox="0 0 14 22"
@@ -37,7 +38,7 @@
                               <rect width="14" height="22" fill="white" />
                             </clipPath>
                           </defs>
-                        </svg>
+                        </svg></a>
                       </div>
                     </div>
                     <hr class="m-0" />
