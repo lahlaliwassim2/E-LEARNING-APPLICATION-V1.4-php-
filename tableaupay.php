@@ -1,15 +1,18 @@
-<?php 
- $tableaupay = file_get_contents("tabpayemjson.json");
- $tableaupay = json_decode($tableaupay,true);
- 
-           foreach($tableaupay as $tableau){
-                echo '<tr>
-                <td class="align-middle p-3">'.$tableau['Name'].'</td>
-                <td class="align-middle">'.$tableau['payment_schedual'].'</td>
-                <td class="align-middle">'.$tableau['bill_number'].'</td>
-                <td class="align-middle">'.$tableau['amount_paid'].'</td>
-                <td class="align-middle">'.$tableau['balance_amount'].'</td>
-                <td class="align-middle">'.$tableau['date'].'</td>
+<?php
+include 'conexion.php';
+$select="SELECT * FROM payment_details";
+$query=$conn->query($select);
+ if($query->num_rows>0){
+   while($row=$query->fetch_assoc()){
+?>
+
+<tr>
+                <td class="align-middle p-3"><?= $row['name']?></td>
+                <td class="align-middle"><?= $row['payment_schedule']?></td>
+                <td class="align-middle"><?= $row['bill_number']?></td>
+                <td class="align-middle"><?= $row['amount_paid']?></td>
+                <td class="align-middle"><?= $row['balance_amount']?></td>
+                <td class="align-middle"><?= $row['date']?></td>
                 <td class="align-middle">
                   <span class="ms-4">
                     <svg
@@ -33,6 +36,6 @@
                     </svg>
                   </span>
                 </td>
-                </tr> ';
-            }
-?>
+                </tr> 
+                <?php }
+    }?>
