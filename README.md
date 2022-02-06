@@ -9,15 +9,15 @@ donc je est jai les taches suivantes :
  1---> j'ai  Apliquéle principe de développement DRY avec PHP. <br>
  2--->  j'ai découpé les élements (Sidebar, Header ) en des composants PHP on utulisant ### INCLUDE .<br>
  3--->   j'ai stocké la liste des étudiants en un seul tableau associatif et les itérer dans la page web Students.<br>
- 4 -->  j'ai stocké les détails des payements en un seul tableau associatif et les itérer dans la page web Payement.
- 5--> j'ai affiché la liste des étudiants contenu dans un fichier  JSON .
- 6--> j'ai créer une base de données nommée e_classe_db
-7--> j'ai connecté ma base de données avec l'application web E-Classe.
-8--> j'ai ajouté trois tables students, courses et payment_details.
-9--> j'ai appliqué le système CRUD (ajouter, afficher, modifier et supprimer) d'une manière dynamique sur les deux tables students et courses.
-10-->j'ai ajouté et afficher seulement les données de la table payment_details.
+ 4 -->  j'ai stocké les détails des payements en un seul tableau associatif et les itérer dans la page web Payement.<br>
+ 5--> j'ai affiché la liste des étudiants contenu dans un fichier  JSON .<br>
+ 6--> j'ai créer une base de données nommée e_classe_db<br>
+7--> j'ai connecté ma base de données avec l'application web E-Classe.<br>
+8--> j'ai ajouté trois tables students, courses et payment_details.<br>
+9--> j'ai appliqué le système CRUD (ajouter, afficher, modifier et supprimer) d'une manière dynamique sur les deux tables students et courses.<br>
+10-->j'ai ajouté et afficher seulement les données de la table payment_details.<br>
 11--> j'ai dynamisé  les cartes de statistiques on dynamiques sur la page Dashboard.
-
+<br>
 
 
 
