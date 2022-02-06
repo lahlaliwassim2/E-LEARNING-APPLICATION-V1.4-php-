@@ -1,21 +1,22 @@
-<?php 
-    $tableaustudent = file_get_contents("tabstdjson.json");
-    $tableaustudent = json_decode($tableaustudent,true);
-    
-   foreach($tableaustudent as $tableau){
-        echo '
+<?php
+include 'conexion.php';
+$select="SELECT * FROM students";
+$query=$conn->query($select);
+ if($query->num_rows>0){
+   while($row=$query->fetch_assoc()){
+?>
     <tr class="bg-white">
                       <th scope="row" class="align-middle imgg">
                         <img src="assets/imh/student.jpg" alt="user picture" />
                       </th>
-                      <td class="align-middle">'.$tableau['Name'].'</td>
-                      <td class="align-middle">'.$tableau['Email'].'</td>
-                      <td class="align-middle">'.$tableau['Phone'].'</td>
-                      <td class="align-middle">'.$tableau['Enroll_number'].'</td>
-                      <td class="align-middle">'.$tableau['Date_of_admission'].'</td>
+                      <td class="align-middle"><?= $row['name']?></td>
+                      <td class="align-middle"><?= $row['email']?></td>
+                      <td class="align-middle"><?= $row['phone']?></td>
+                      <td class="align-middle"><?= $row['enroll_number']?></td>
+                      <td class="align-middle"><?= $row['date_of_admission']?></td>
                       <td class="align-middle">
                         <span>
-                          <svg
+                         <a href="modifier.php?id=<?= $row['id'];?>"> <svg 
                             width="19"
                             height="19"
                             viewBox="0 0 19 19"
@@ -33,10 +34,10 @@
                                 <rect width="19" height="19" fill="white" />
                               </clipPath>
                             </defs>
-                          </svg>
+                          </svg></a>
                         </span>
                         <span class="ms-4">
-                          <svg
+                       <a href="deletestud.php?id=<?= $row['id']?>"> <svg
                             width="16"
                             height="18"
                             viewBox="0 0 16 18"
@@ -59,9 +60,10 @@
                                 />
                               </clipPath>
                             </defs>
-                          </svg> 
+                          </svg>
+                         </a>
                         </span>
                       </td>
-                    </tr> ';
-                 }
-                    ?>
+                    </tr> 
+    <?php }
+    }?>
