@@ -1,4 +1,6 @@
-<?php include'headder.php' ?>
+<?php include 'outil.php';?>
+
+<?php include'headder.php'?>
 
 <body>
   <main>
@@ -24,7 +26,7 @@
                 </svg>
                 <p class="text-secondary">Students</p>
                 <div class="text-end">
-                  <h3 class="d-inline">243</h3>
+                  <h3 class="d-inline"><?= $compteur?></h3>
                 </div>
               </div>
             </div>
@@ -54,7 +56,7 @@
                 <p class="text-secondary">Payments</p>
                 <div class="text-end">
                   <span>DHS</span>
-                  <h3 class="d-inline">556,000</h3>
+                  <h3 class="d-inline"><?php echo $somme['somme'];?></h3>
                 </div>
               </div>
             </div>
