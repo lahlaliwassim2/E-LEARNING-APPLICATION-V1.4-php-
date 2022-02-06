@@ -39,9 +39,9 @@
                   </svg>
                 </div>
                 <div class="col-3 ">
-                  <button class="btn btn-info ">
+                <a href="ajouterstudents.php">  <button class="btn btn-info ">
                     <span class="d-lg-none d-md-none">ADD</span>
-                   <span class="d-md-inline d-none d-lg-inline"> ADD NEW STUDENT</span></button>
+                   <span class="d-md-inline d-none d-lg-inline"> ADD NEW STUDENT</span></button></a>
                 </div>
               </div>
               <hr class="m-0" />
