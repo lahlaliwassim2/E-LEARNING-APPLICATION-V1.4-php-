@@ -39,9 +39,9 @@
                   </svg>
                 </div>
                 <div class="col-3 ">
-                <a href="ajouterstudents.php">  <button class="btn btn-info ">
+                <a href="ajoutercourses.php">  <button class="btn btn-info ">
                     <span class="d-lg-none d-md-none">ADD</span>
-                   <span class="d-md-inline d-none d-lg-inline"> ADD NEW STUDENT</span></button></a>
+                   <span class="d-md-inline d-none d-lg-inline"> ADD NEW COURSE</span></button></a>
                 </div>
               </div>
               <hr class="m-0" />
@@ -57,7 +57,7 @@
                     </tr>
                   </thead>
                   <tbody>
-        
+         <?php   include 'tableaucourses.php'; ?>
                   </tbody>
                 </table>
               </div>
