@@ -53,7 +53,7 @@
 
         <div class="form-group mt-3 input-group-lg btnA">
           <input  type="submit" name="submit"   class="btn btn-primary text-white form-control">
-           <a href="">Ajouter</a>
+           <a href="payements.php">Ajouter</a>
           </input>
         </div>
       </div>
@@ -73,6 +73,6 @@
    $date=$_POST['date'];
   $insert="INSERT INTO payment_details (name,payment_schedule,bill_number,amount_paid,balance_amount,date) VALUES ('$name','$schedule','$bill','$amount','$balance','$date')";
   $result=$conn->query($insert);
-  header('location:espace etudiantss.php');
+  header('location: payements.php');
   }
 ?>

@@ -26,6 +26,7 @@
         
       </div>
       <div class="mt-2">
+        
         <div class="form-group mt-3 input-group-lg">
           <label for="email" class="form-label mt-3">Name</label>
           <input type="text" id="" class="form-control" name="name" placeholder="Enter Your Name" required autofocus />
@@ -47,11 +48,13 @@
           <input type="date" id="password" name="date_of_admission" class="form-control" placeholder="Enter date" />
         </div>
 
-        <div class="form-group mt-4 input-group-lg btnA">
+        <div class="form-group mt-2 input-group-lg btnA">
           <input  type="submit" name="submit"   class="btn btn-primary text-white form-control">
            <a href="">ajouter</a>
           </input>
+          <a href="">retour</a>
         </div>
+        <a href="" class="">retour</a>
       </div>
     </form>
     <script src="./bootstrap/js/bootstrap.js"></script>
@@ -67,7 +70,7 @@
    $enroll=$_POST['enroll_number'];
    $date=$_POST['date_of_admission'];
   $insert="INSERT INTO students (name,email,phone,enroll_number,date_of_admission) VALUES ('$name','$email','$phone','$enroll','$date')";
-  $result=$conn->query($insert);
+  $result=$conn->query($insert); 
 
   }
 ?>

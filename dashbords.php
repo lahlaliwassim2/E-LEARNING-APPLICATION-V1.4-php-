@@ -41,7 +41,7 @@
 
                 <p class="text-secondary">Course</p>
                 <div class="text-end">
-                  <h3 class="d-inline">13</h3>
+                  <h3 class="d-inline"><?= $compteurcourses?></h3>
                 </div>
               </div>
             </div>

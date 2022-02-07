@@ -2,8 +2,8 @@
 include 'conexion.php';
 $select="SELECT * FROM payment_details";
 $query=$conn->query($select);
- if($query->num_rows>0){
-   while($row=$query->fetch_assoc()){
+if($query->num_rows>0){
+while($row=$query->fetch_assoc()){
 ?>
 
 <tr>
