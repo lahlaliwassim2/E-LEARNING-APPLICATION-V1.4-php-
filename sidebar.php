@@ -20,7 +20,7 @@
                     <a href="dashbords.php">      <i class="bi bi-house-door me-2"></i><span class="d-none d-md-inline"> Home</span>
                      </a> </li>
                       <li  class="list-group-item border-0 aling-start ps-3">
-               <a href="">          <i class="bi bi-bookmark me-2"></i> <span class="d-none d-md-inline"> Course</span>
+               <a href="courses.php">          <i class="bi bi-bookmark me-2"></i> <span class="d-none d-md-inline"> Course</span>
                      </a>  </li>
                       <li class="list-group-item border-0 ps-3">
                      <a href="espace etudiantss.php">     <i class="bi bi-mortarboard me-2"></i> <span class="d-none d-md-inline"> Students</span>
