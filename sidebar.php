@@ -10,7 +10,11 @@
             <div>
               <img src="assets/imh/unknown.png" alt="probleme de connexion " class="rounded-circle img " />
               <div class="mt-2">
-                <span><b> wassim lahlali</b></span>
+                <?php 
+                 if(isset( $_SESSION['name']) && isset( $_SESSION['email'])){
+                ?>
+                <span><b> <?= $_SESSION['name']; ?></b></span>
+                <?php }?>                
               </div>
               <span class="text-info">admin</span>
             </div>
@@ -23,7 +27,7 @@
                <a href="courses.php">          <i class="bi bi-bookmark me-2"></i> <span class="d-none d-md-inline"> Course</span>
                      </a>  </li>
                       <li class="list-group-item border-0 ps-3">
-                     <a href="espace etudiantss.php">     <i class="bi bi-mortarboard me-2"></i> <span class="d-none d-md-inline"> Students</span>
+                     <a href="espace_etudiantss.php">     <i class="bi bi-mortarboard me-2"></i> <span class="d-none d-md-inline"> Students</span>
                      </a> </li>
                       <li class="list-group-item  border-0 ps-3">
                         <a href="payements.php"> <i class="bi bi-currency-dollar me-2"></i> <span class="d-none d-md-inline"> Payment</span>
@@ -39,8 +43,8 @@
 
           </div>
           <div class="text-start col-3 cl">
-             <a href="indexs.php"><span class="me-2 d-none d-md-inline">logout </span></a>
-            <a href="indexs.php"> <i class="bi bi-box-arrow-right"></i></a>
+             <a href="logout.php"><span class="me-2 d-none d-md-inline">logout </span></a>
+            <a href="logout.php"> <i class="bi bi-box-arrow-right"></i></a>
           </div>
         </div>
 
