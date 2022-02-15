@@ -11,8 +11,13 @@
 </head>
 
 <body class="main-colo">
+
   <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
-    <form action="#" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
+
+
+      <!-- FORM -->
+    <form action="backlog.php" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
+
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -27,30 +32,41 @@
           Enter Your Credentials to access your account
         </p>
       </div>
+      <?php if(isset($_GET['error'])){?>
+        <div class="alert alert-danger" role="alert">
+             <?php echo $_GET['error'];?>
+               </div>
+      <?php }?>
+      
       <div class="mt-3">
+
         <div class="form-group mt-3 input-group-lg">
           <label for="email" class="form-label mt-3">Email</label>
-          <input type="email" id="email" class="form-control" placeholder="Enter Your Email" required autofocus />
-        </div>
-        <div class="form-group mt-3 input-group-lg">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" id="password" class="form-control" placeholder="Enter Your password" />
-        </div>
-        <div class="form-group mt-4 input-group-lg btnA">
-          <button  type="submit"   class="btn btn-primary text-white form-control">
-           <a href="dashbords.php"> SIGN IN </a>
-          </button>
+          <input type="email"  name="email"  value="<?php if(isset( $_COOKIE['email'])){ echo $_COOKIE['email'];}?>"  class="form-control" placeholder="Enter Your Email" />
         </div>
 
+        <div class="form-group mt-3 input-group-lg">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password"  value="<?php if(isset( $_COOKIE['password'])){ echo $_COOKIE['password'];}?>" class="form-control" placeholder="Enter Your password" />
+        </div>
+        <div class="form-check m-3 ">
+        <input class="form-check-input" type="checkbox" name="remember" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+                 Se souvenir de moi.
+         </label>
+        </div>
         <div class="text-center mt-4 mb-3 btnA">
           <p class="d-inline text-secondary" style="margin-right: 10px">
             Forgot your password?
           </p>
 
-          <a href="#">Ret password</a>
+          <a href="#">Reset password</a>
         </div>
       </div>
+      <div class="form-group mt-2 input-group-lg btnA">
+          <input  type="submit" name="submit"   class="btn btn-primary text-white form-control"> </div>
     </form>
+    
     <script src="./bootstrap/js/bootstrap.js"></script>
   </main>
 </body>
