@@ -32,12 +32,12 @@
         </div>
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Temps</label>
-          <input type="text" name="temps" class="form-control"  placeholder="Enter Your Email" />
+          <input type="text" name="temps" class="form-control"  required autofocus placeholder="Enter Your Email" />
         </div>
         
         <div class="form-group mt-4 input-group-lg btnA">
           <input  type="submit" name="submit"   class="btn btn-primary text-white form-control">
-           <a href="">ajouter</a>
+           <a href="courses.php "  required autofocus class="text-info btn"> < Retour </a>
           </input>
         </div>
       </div>
@@ -59,7 +59,14 @@
   //  <script>
   //  window.location.href = "courses.php";
   // </script>
+  if (mysqli_query($conn,$insert))
+  {
+    echo "
+    <script>
+    window.location.href = 'courses.php';
+    </script>
+";
   
-    
+  }
   }
    ?>
