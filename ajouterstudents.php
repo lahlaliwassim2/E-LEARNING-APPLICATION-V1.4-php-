@@ -11,8 +11,9 @@
 </head>
 
 <body class="main-colo">
+
   <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
-    <form action="#" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
+    <form action="" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -25,36 +26,43 @@
         <h1>Student</h1>
         
       </div>
+      <?php if(isset($_GET['error'])){?>
+        <div class="alert alert-danger" role="alert">
+             <?php echo $_GET['error'];?>
+               </div>
+      <?php }?>
       <div class="mt-2">
         
         <div class="form-group mt-3 input-group-lg">
           <label for="email" class="form-label mt-3">Name</label>
-          <input type="text" id="" class="form-control" name="name" placeholder="Enter Your Name" required autofocus />
+          <input type="text" id="" class="form-control" name="name" placeholder="Enter Your Name"  />
         </div>
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Email</label>
-          <input type="text" name="email" class="form-control"  placeholder="Enter Your Email" />
+          <input type="text" name="email" class="form-control"    placeholder="Enter Your Email" />
+          
         </div>
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Phone</label>
-          <input type="text"  class="form-control" name="phone" placeholder="Enter Your Phone" />
-        </div>
+          <input type="text"   class="form-control" name="phone"   placeholder="Enter Your Phone" />
+          
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Enroll_number</label>
-          <input type="text" id="password" name="enroll_number" class="form-control" placeholder="Enter Your enroll" />
+          <input type="text"  id="password" name="enroll_number" class="form-control"   placeholder="Enter Your enroll" />
+          
         </div>
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Date_of_admission</label>
-          <input type="date" id="password" name="date_of_admission" class="form-control" placeholder="Enter date" />
+          <input type="date" id="password" name="date_of_admission" class="form-control"  placeholder="Enter date" />
+         
         </div>
-
         <div class="form-group mt-2 input-group-lg btnA">
           <input  type="submit" name="submit"   class="btn btn-primary text-white form-control">
-           <a href="">ajouter</a>
+  
           </input>
-          <a href="">retour</a>
+         
         </div>
-        <a href="" class="">retour</a>
+      
       </div>
     </form>
     <script src="./bootstrap/js/bootstrap.js"></script>
@@ -64,13 +72,24 @@
 <?php
    include 'conexion.php';
   if(isset($_POST['submit'])){
+      
    $name=$_POST['name'];
    $email=$_POST['email'];
    $phone=$_POST['phone'];
    $enroll=$_POST['enroll_number'];
    $date=$_POST['date_of_admission'];
+  //  if($name && $email && $phone && $enroll && $date){
+    // if(!empty($name) || !empty($email) || !empty($phone) || !empty($enroll) || !empty($date)){
   $insert="INSERT INTO students (name,email,phone,enroll_number,date_of_admission) VALUES ('$name','$email','$phone','$enroll','$date')";
   $result=$conn->query($insert); 
+  echo "
+        <script>
+        window.location.href = 'espace_etudiantss.php';
+        </script>
+    ";
+  
+}
+// else{
+//     echo ' nop';
 
-  }
 ?>
