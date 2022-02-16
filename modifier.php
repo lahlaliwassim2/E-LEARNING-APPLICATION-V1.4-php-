@@ -5,7 +5,8 @@ if(isset($_GET['id'])){
 $select="SELECT * FROM students WHERE id=$id";
 $query=$conn->query($select);
   if($query->num_rows>0){
-    while($row=$query->fetch_assoc()){
+    // while($row=$query->fetch_assoc())
+       foreach ($query as $row){
 ?>
 
 <!DOCTYPE html>
@@ -81,8 +82,13 @@ $query=$conn->query($select);
    $phone=$_POST['phone'];
    $enroll=$_POST['enroll_number'];
    $date=$_POST['date_of_admission'];
-  $insert="UPDATE `students` SET `name`='$name',`email`=' $email',`phone`='$phone',`enroll_number`='$enroll',`date_of_admission`='$date' WHERE id=$id";
+  $insert="UPDATE `students` SET `name`='$name',`email`=' $email',`phone`='$phone',`enroll_number`='$enroll',`date_of_admission`='$date' 
+  WHERE id=$id";
   $result=$conn->query($insert);
-  header('location:espace%20etudiantss.php');
+  echo "
+        <script>
+        window.location.href = 'espace_etudiantss.php';
+        </script>
+    ";
   }
 ?>
