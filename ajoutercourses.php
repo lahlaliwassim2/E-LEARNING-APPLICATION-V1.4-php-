@@ -59,14 +59,13 @@
   //  <script>
   //  window.location.href = "courses.php";
   // </script>
-  if (mysqli_query($conn,$insert))
-  {
+  
     echo "
     <script>
     window.location.href = 'courses.php';
     </script>
 ";
   
-  }
+  
   }
    ?>
