@@ -3,7 +3,7 @@ include 'conexion.php';
 $select="SELECT * FROM courses";
 $query=$conn->query($select);
 if($query->num_rows>0){
-    while($row=$query->fetch_assoc()){
+    while($row=$query->fetch_assoc()){ // Récupère les ligne de résultat sous forme de tableau associatif
    
 ?>
 
