@@ -82,10 +82,10 @@ $query=$conn->query($select);
    $phone=$_POST['phone'];
    $enroll=$_POST['enroll_number'];
    $date=$_POST['date_of_admission'];
-  $insert="UPDATE `students` SET `name`='$name',`email`=' $email',`phone`='$phone',`enroll_number`='$enroll',`date_of_admission`='$date' 
-  WHERE id=$id";
-  $result=$conn->query($insert);
-  echo "
+   $insert="UPDATE `students` SET `name`='$name',`email`=' $email',`phone`='$phone',`enroll_number`='$enroll',`date_of_admission`='$date' 
+   WHERE id=$id";
+   $result=$conn->query($insert);
+   echo "
         <script>
         window.location.href = 'espace_etudiantss.php';
         </script>
