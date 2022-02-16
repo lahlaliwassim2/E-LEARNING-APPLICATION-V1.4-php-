@@ -17,6 +17,14 @@ donc je est jai les taches suivantes :
 9--> j'ai appliqué le système CRUD (ajouter, afficher, modifier et supprimer) d'une manière dynamique sur les deux tables students et courses.<br>
 10-->j'ai ajouté et afficher seulement les données de la table payment_details.<br>
 11--> j'ai dynamisé  les cartes de statistiques on dynamiques sur la page Dashboard.
+12--> j' ai  modifié la base de donnéer en ajoutant la table "comptes" contenant les données des utilisateurs de l'application.
+13--> j'ai 'assuré que le formulaire est valide avant d'intérroger la base de donnée.
+14--> j'assuré que l'utilisateur est informé que l'authentification a echoué lorsqu'il fournit des infomation incorrectes, ainsi le garder dans la page d'authentification.
+15-->j'ai assuré que l'utilisateur est redirigé vers le dashboard lorsque l'authentification passe avec succès.
+16-->j'ai assuré de donner le choix d'enregistrer les informations de connection afin qu'il puisse utiliser la fonction d'auto saisie lorsqu'il essay de se connecter.
+17--> j'ai assuré que le utilisateur est connecté pendant 24 heures avant que l'application lui demande à nouveaux de s'authentifier.
+18--> j'ai 'assuré que nom d'utilisateur remplace le nom générique **admin name **dans la maquette.
+19-->j'ai 
 <br>
 
 
