@@ -26,11 +26,11 @@
         <h1>Student</h1>
         
       </div>
-      <?php if(isset($_GET['error'])){?>
+      <?php if(isset($_GET['error'])){ ?>
         <div class="alert alert-danger" role="alert">
              <?php echo $_GET['error'];?>
                </div>
-      <?php }?>
+      <?php } ?>
       <div class="mt-2">
         
         <div class="form-group mt-3 input-group-lg">
@@ -80,16 +80,55 @@
    $date=$_POST['date_of_admission'];
   //  if($name && $email && $phone && $enroll && $date){
     // if(!empty($name) || !empty($email) || !empty($phone) || !empty($enroll) || !empty($date)){
+      if(empty($name)){
+        echo "
+        <script>
+        window.location.href = 'ajouterstudents.php?error=entrer ton non ';
+        </script>
+    ";
+            }
+    else if(empty($email)){
+      echo "
+      <script>
+      window.location.href = 'ajouterstudents.php?error=entrer ton email ';
+      </script>
+  ";
+    }
+         else if(empty($phone)){
+          echo "
+          <script>
+          window.location.href = 'ajouterstudents.php?error=entrer ton numero  ';
+          </script>
+      ";
+                }
+        else if(empty($enroll)){
+          echo "
+          <script>
+          window.location.href = 'ajouterstudents.php?error=entre ton enroll ';
+          </script>
+      ";
+                 }
+             else  if(empty($date)){
+              echo "
+              <script>
+              window.location.href = 'ajouterstudents.php?error=entrer la date ';
+              </script>
+          ";
+                }
+        
+             else{
+
+             
   $insert="INSERT INTO students (name,email,phone,enroll_number,date_of_admission) VALUES ('$name','$email','$phone','$enroll','$date')";
-  $result=$conn->query($insert); 
+  $result=$conn->query($insert); //mysqli_query($conn, $insert)
   echo "
         <script>
         window.location.href = 'espace_etudiantss.php';
         </script>
     ";
-  
-}
-// else{
+             }}
+
+//} else{
 //     echo ' nop';
 
 ?>
