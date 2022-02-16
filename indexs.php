@@ -50,7 +50,7 @@
           <input type="password" name="password"  value="<?php if(isset( $_COOKIE['password'])){ echo $_COOKIE['password'];}?>" class="form-control" placeholder="Enter Your password" />
         </div>
         <div class="form-check m-3 ">
-        <input class="form-check-input" type="checkbox" name="remember" value="" id="flexCheckDefault">
+        <input class="form-check-input" type="checkbox" name="remember" id="flexCheckDefault" <?php if(isset($_COOKIE['email'])) {;?> checked <?php }?>>
         <label class="form-check-label" for="flexCheckDefault">
                  Se souvenir de moi.
          </label>
