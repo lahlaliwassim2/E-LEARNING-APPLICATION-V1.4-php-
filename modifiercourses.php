@@ -66,9 +66,14 @@ if($query->num_rows>0){
   if(isset($_POST['submit'])){
    $name=$_POST['name'];
    $temps=$_POST['temps'];
-   $insert="UPDATE `students` SET `name`='$name',`email`=' $email'";
+   $insert="UPDATE `courses` SET `name`='$name',`temps`=' $temps'   WHERE id=$id";
+   
    $result=$conn->query($insert);
-
+   echo "
+   <script>
+   window.location.href = 'courses.php';
+   </script>
+";
 
   
     
