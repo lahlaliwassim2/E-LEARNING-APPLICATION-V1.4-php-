@@ -1,8 +1,8 @@
-# E-LEARNING-APPLICATION-V1.0-php-
+# E-LEARNING-APPLICATION-V1.3-php-
                           Contexte du projet
 je suis un développeur backend, mon  équipe a besoin de moi  pour enregistrer les données de l'application web E-Classe sur la base de données.
 
-donc je est jai les taches suivantes :
+donc je est jai les taches suivantes :<br>
 
                        
   
@@ -16,15 +16,15 @@ donc je est jai les taches suivantes :
 8--> j'ai ajouté trois tables students, courses et payment_details.<br>
 9--> j'ai appliqué le système CRUD (ajouter, afficher, modifier et supprimer) d'une manière dynamique sur les deux tables students et courses.<br>
 10-->j'ai ajouté et afficher seulement les données de la table payment_details.<br>
-11--> j'ai dynamisé  les cartes de statistiques on dynamiques sur la page Dashboard.
-12--> j' ai  modifié la base de donnéer en ajoutant la table "comptes" contenant les données des utilisateurs de l'application.
-13--> j'ai 'assuré que le formulaire est valide avant d'intérroger la base de donnée.
-14--> j'assuré que l'utilisateur est informé que l'authentification a echoué lorsqu'il fournit des infomation incorrectes, ainsi le garder dans la page d'authentification.
-15-->j'ai assuré que l'utilisateur est redirigé vers le dashboard lorsque l'authentification passe avec succès.
-16-->j'ai assuré de donner le choix d'enregistrer les informations de connection afin qu'il puisse utiliser la fonction d'auto saisie lorsqu'il essay de se connecter.
-17--> j'ai assuré que le utilisateur est connecté pendant 24 heures avant que l'application lui demande à nouveaux de s'authentifier.
-18--> j'ai 'assuré que nom d'utilisateur remplace le nom générique **admin name **dans la maquette.
-19-->j'ai 
+11--> j'ai dynamisé  les cartes de statistiques on dynamiques sur la page Dashboard.<br>
+12--> j' ai  modifié la base de donnéer en ajoutant la table "comptes" contenant les données des utilisateurs de l'application.<br>
+13--> j'ai 'assuré que le formulaire est valide avant d'intérroger la base de donnée.<br>
+14--> j'assuré que l'utilisateur est informé que l'authentification a echoué lorsqu'il fournit des infomation incorrectes, ainsi le garder dans la page d'authentification.<br>
+15-->j'ai assuré que l'utilisateur est redirigé vers le dashboard lorsque l'authentification passe avec succès.<br>
+16-->j'ai assuré de donner le choix d'enregistrer les informations de connection afin qu'il puisse utiliser la fonction d'auto saisie lorsqu'il essay de se connecter.<br>
+17--> j'ai assuré que le utilisateur est connecté pendant 24 heures avant que l'application lui demande à nouveaux de s'authentifier.<br>
+18--> j'ai 'assuré que nom d'utilisateur remplace le nom générique **admin name **dans la maquette.<br>
+19-->j'ai ajouter la page de l'inscription .<br>
 <br>
 
 
