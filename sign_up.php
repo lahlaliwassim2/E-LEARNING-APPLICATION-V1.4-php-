@@ -55,7 +55,10 @@
           <input type="password" name="password"   class="form-control" placeholder="Enter Your password" />
         </div>
 
-       
+        <div class="form-group mt-3 input-group-lg">
+          <label for="password" class="form-label">Confirme Password</label>
+          <input type="password" name="confpassword"   class="form-control" placeholder="Enter Your password" />
+        </div>
         
        
 
