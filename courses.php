@@ -67,7 +67,9 @@
 
             <div class=" w-100 BackGround invisible p-2 vh-100 d-flex justify-content-center align-items-center position-absolute  top-0 start-50  translate-middle-x"
                 id="lolo">
-                <form action="#" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
+              
+                <form action="#" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main position-relative">
+                <button type="button" class="btn-close ferm top-4 end-0 m-10px p-10px translate-middle-y  position-absolute aria-label="Close"></button>
                     <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -80,23 +82,24 @@
                         <h1>Courses</h1>
 
                     </div>
+                                       
                     <div class="mt-2">
                         <div class="form-group mt-3 input-group-lg">
                             <label for="email" class="form-label mt-3">Name</label>
-                            <input type="text" id="" class="form-control" name="name" placeholder="Enter Your Name"
-                                required autofocus />
+                            <input type="text" id="name" class="form-control" name="name" placeholder="Enter Your Name"
+                   autofocus />
                         </div>
+                                            <div id="erorN" ></div>
                         <div class="form-group mt-3 input-group-lg">
                             <label for="password" class="form-label">Temps</label>
-                            <input type="text" name="temps" class="form-control" required autofocus
+                           <div id="erorE" class="position-absolute " ></div>
+                            <input type="text" id="temps" name="temps" class="form-control" autofocus
                                 placeholder="Enter Your Email" />
                         </div>
-
+ 
                         <div class="form-group mt-4 input-group-lg btnA">
-                            <input type="submit" name="submit" class="btn ab btn-primary text-white form-control">
-                            <a href=" " required autofocus class="text-info btn">
-                                <- Retour </a>
-                                    </input>
+                            <input type="submit" id="submit" name="submit" class="btn ab btn-primary text-white form-control">
+                            
                         </div>
                     </div>
                 </form>
@@ -112,11 +115,7 @@
      $temps=$_POST['temps'];
      $insert="INSERT INTO courses (name ,temps) VALUES ('$name','$temps')";
      $result=$conn->query($insert);
-
-    //  <script>
-    //  window.location.href = "courses.php";
-    // </script>
-  
+     
     echo "
     <script>
     window.location.href = 'courses.php';
