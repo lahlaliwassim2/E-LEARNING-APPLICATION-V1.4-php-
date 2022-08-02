@@ -11,7 +11,7 @@
 </head>
 
 <body class="main-colo">
-  <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
+  <main class=" p-2 w-100  vh-100 d-flex justify-content-center align-items-center ">
     <form action="#" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -60,11 +60,7 @@
   //  window.location.href = "courses.php";
   // </script>
   
-    echo "
-    <script>
-    window.location.href = 'courses.php';
-    </script>
-";
+ 
   
   }
   

@@ -15,7 +15,7 @@
   <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
 
 
-      <!-- FORM -->
+                                   <!-- FORM -->
     <form action="backlog.php" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
 
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
@@ -45,20 +45,29 @@
           <input type="email"  name="email"  value="<?php if(isset( $_COOKIE['email'])){ echo $_COOKIE['email'];}?>"  class="form-control" placeholder="Enter Your Email" />
         </div>
 
+
+
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Password</label>
           <input type="password" name="password"  value="<?php if(isset( $_COOKIE['password'])){ echo $_COOKIE['password'];}?>" class="form-control" placeholder="Enter Your password" />
         </div>
+
+
+
         <div class="form-check m-3 ">
         <input class="form-check-input" type="checkbox" name="remember" id="flexCheckDefault" <?php if(isset($_COOKIE['email'])) {;?> checked <?php }?>>
         <label class="form-check-label" for="flexCheckDefault">
                  Se souvenir de moi.
          </label>
         </div>
+
+
+
         <div class="text-center mt-4 mb-3 btnA">
           <p class="d-inline text-secondary" style="margin-right: 10px">
             Forgot your password?
           </p>
+
 
           <a href="#">Reset password</a>
         </div>

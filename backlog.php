@@ -1,6 +1,6 @@
 <?php
 session_start();
-  include 'conexion.php';
+    include 'conexion.php';
 if(isset($_POST['email']) && isset($_POST['password'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -17,12 +17,13 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             $data= $conn->query($sql);   //envoyer la requette a la base de donnée
                if(mysqli_num_rows($data) ==1)
                             {
-                               $row=mysqli_fetch_assoc($data);
+                               $row=mysqli_fetch_assoc($data); // Récupère une ligne de résultat sous forme de tableau associatif
                                    if($row['email']==$email && $row['password']==$password)
                                                 {
                                                     if(isset($_POST['remember'])){
                                                        setcookie('email',$email,time()+10);
-                                                       setcookie('password',$password,time()+10);}
+                                                       setcookie('password',$password,time()+10);
+                                                    }
                                                     
                                                  
                                                         
@@ -32,7 +33,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
                                                         $_SESSION['password']=$row['password'];
                                                         header("location:dashbords.php");
                                                      }
-                                                    else{ header("location:indexs.php?error=password or email is not valid"); exit();}
+                                                else{ header("location:indexs.php?error=password or email is not valid"); exit();}
                             }
                             else{ header("location:indexs.php?error=password or email is not valid"); exit();}    
         }

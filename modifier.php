@@ -1,13 +1,32 @@
 <?php
+
 include 'conexion.php';
 if(isset($_GET['id'])){
     $id=$_GET['id'];
 $select="SELECT * FROM students WHERE id=$id";
-$query=$conn->query($select);
+$query=$conn->query($select);  
   if($query->num_rows>0){
     // while($row=$query->fetch_assoc())
-       foreach ($query as $row){
-?>
+  foreach ($query as $row){
+    /*
+    for($index = 'initialiser'; 'condition'; 'incrementation') {
+      //instruction
+    }
+    'condition': $index < 10;
+    $index = 2;
+    $index = 'initialiser';
+    while('condition') {
+      // instruction
+      'incrementation';
+
+
+    }
+    do {
+      //instrcution;
+    }while();
+
+    */
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +91,9 @@ $query=$conn->query($select);
 </body>
 </html>
 <?php }
-} }?>
+} 
+}
+ ?>
 
 <?php
    include 'conexion.php';

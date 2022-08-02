@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="assets/css/styile.css">
 </head>
 
-<body class="main-colo">
+<div class="main-colo">
 
   <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
+
+
+
     <form action="" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -22,10 +25,11 @@
         <path d="M3 0L3 39" stroke="#00C1FE" stroke-width="6" />
       </svg>
       
+
       <div class="text-center mt-2">
         <h1>Student</h1>
-        
       </div>
+
       <?php if(isset($_GET['error'])){ ?>
         <div class="alert alert-danger" role="alert">
              <?php echo $_GET['error'];?>
@@ -37,6 +41,8 @@
           <label for="email" class="form-label mt-3">Name</label>
           <input type="text" id="" class="form-control" name="name" placeholder="Enter Your Name"  />
         </div>
+
+
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Email</label>
           <input type="text" name="email" class="form-control"    placeholder="Enter Your Email" />
@@ -67,7 +73,7 @@
     </form>
     <script src="./bootstrap/js/bootstrap.js"></script>
   </main>
-</body>
+</div>
 </html>
 <?php
    include 'conexion.php';
@@ -126,9 +132,6 @@
         window.location.href = 'espace_etudiantss.php';
         </script>
     ";
-             }}
-
-//} else{
-//     echo ' nop';
-
+             }
+            }
 ?>

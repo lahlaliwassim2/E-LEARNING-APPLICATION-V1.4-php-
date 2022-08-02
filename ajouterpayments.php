@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E CLASSE</title>
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styile.css">
 </head>
 
-<body class="main-colo">
+<div class="main-colo">
   <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@
     </form>
     <script src="./bootstrap/js/bootstrap.js"></script>
   </main>
-</body>
+</div>
 
 </html>
 <?php
@@ -77,6 +77,7 @@ if (isset($_POST['submit'])) {
  
     $insert = "INSERT INTO payment_details (name,payment_schedule,bill_number,amount_paid,balance_amount,date) VALUES ('$name','$schedule','$bill','$amount','$balance','$date')";
     $result = $conn->query($insert);
+            
     echo "
     <script>
     window.location.href = 'payements.php';

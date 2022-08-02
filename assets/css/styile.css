@@ -14,7 +14,7 @@
     background-color :#FAFFC1;
 }
 .cls1{
-    background-color: #F0F9FF;;
+    background-color: #F0F9FF;; 
 }
 .cls2{
     background-color:  #FEF6FB;
@@ -70,5 +70,17 @@
 .imgg img {
     width: 100px;
 }
-
-
+.main-col{
+    background-color: rgba(226, 52, 52, 0.103);
+ 
+}
+.BackGround{
+    background: radial-gradient(black, transparent);
+}
+.ferM{
+    position: absolute;
+    width: 10%;
+}
+.btn-close{
+    margin: 3%;
+}

@@ -4,3 +4,4 @@
  session_destroy();  //détruit toutes les données associées à la session courante.
  header("location:indexs.php");
 ?>
+

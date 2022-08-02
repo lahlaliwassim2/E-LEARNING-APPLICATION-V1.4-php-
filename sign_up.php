@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E CLASSE</title>
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styile.css">
-</head>
-
+<?php
+include 'headder.php';
+?>
 <body class="main-colo">
 
   <main class=" p-2 vh-100 d-flex justify-content-center align-items-center ">
 
-
-      <!-- FORM -->
+ <!-- FORM -->
     <form action="backup.php" method="POST" class="bg-white col-12 p-3 rounded-4 shadow form form-main">
 
       <svg class="ms-4 mt-2" width="152" height="39" viewBox="0 0 152 39" fill="none"
@@ -32,42 +22,43 @@
           CREER VOTR COMPTE 
         </p>
       </div>
+
+
       <?php if(isset($_GET['error'])){?>
         <div class="alert alert-danger" role="alert">
              <?php echo $_GET['error'];?>
                </div>
       <?php }?>
-      
       <div class="mt-3">
-
         <div class="form-group mt-3 input-group-lg">
           <label for="name" class="form-label mt-3">Name</label>
           <input type="name"  name="name"    class="form-control" placeholder="Enter Your name" />
         </div>
+
 
         <div class="form-group mt-3 input-group-lg">
           <label for="email" class="form-label mt-3">Email</label>
           <input type="email"  name="email"    class="form-control" placeholder="Enter Your Email" />
         </div>
 
+
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Password</label>
           <input type="password" name="password"   class="form-control" placeholder="Enter Your password" />
         </div>
 
+
         <div class="form-group mt-3 input-group-lg">
           <label for="password" class="form-label">Confirme Password</label>
-          <input type="password" name="confpassword"   class="form-control" placeholder="Confirm git statu s
-          Your password" />
-        </div>
+          <input type="password" name="confpassword"   class="form-control" placeholder="Confirm Your password" />
+      </div>
         
-       
 
-          
       </div>
       <div class="form-group mt-2 input-group-lg btnA">
           <input  type="submit" name="submit"   class="btn btn-primary text-white form-control"> </div>
     </form>
+    
     
     <script src="./bootstrap/js/bootstrap.js"></script>
   </main>

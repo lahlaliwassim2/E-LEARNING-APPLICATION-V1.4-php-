@@ -2,7 +2,7 @@
 include 'conexion.php';
 $select="SELECT * FROM students";
 $query=$conn->query($select); 
-$compteur=mysqli_num_rows($query);
+$compteur=mysqli_num_rows($query);   //Retourne le nombre de lignes dans un résultat
 ?>
 
 <?php
@@ -17,4 +17,12 @@ include 'conexion.php';
 $select="SELECT * FROM courses";
 $query=$conn->query($select);
 $compteurcourses=mysqli_num_rows($query);
+?>
+
+
+<?php
+include 'conexion.php';
+$select="SELECT * FROM comptes";
+$query=$conn->query($select); 
+$compteurs=mysqli_num_rows($query);   //Retourne le nombre de lignes dans un résultat
 ?>

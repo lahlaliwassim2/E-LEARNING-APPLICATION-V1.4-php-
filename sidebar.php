@@ -10,7 +10,7 @@
             <div>
               <img src="assets/imh/unknown.png" alt="probleme de connexion " class="rounded-circle img " />
               <div class="mt-2">
-                <?php 
+              <?php 
                  if(isset( $_SESSION['name']) && isset( $_SESSION['email'])){
                 ?>
                 <span><b> <?= $_SESSION['name']; ?></b></span>
@@ -18,7 +18,7 @@
               </div>
               <span class="text-info">admin</span>
             </div>
-            <div class="mx-auto my-5 list1 ">
+            <div class="mx-auto my-5 list1 sm-p-0 ">
               <ul class="list-group text-start mx-2 ">
                 <li  class="list-group-item border-0  ps-3 bg-active rounded-3">
                     <a href="dashbords.php">      <i class="bi bi-house-door me-2"></i><span class="d-none d-md-inline"> Home</span>

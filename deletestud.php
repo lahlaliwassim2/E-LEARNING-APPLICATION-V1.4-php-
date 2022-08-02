@@ -9,8 +9,9 @@ echo "
 window.location.href = 'espace_etudiantss.php';
 </script>
 ";
-if(! $query=$conn->query($delete)){
-   
-}
+
 }
 ?>
+
+
+

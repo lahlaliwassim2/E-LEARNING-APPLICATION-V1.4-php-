@@ -71,7 +71,7 @@
 
                 <p class="text-secondary">Users</p>
                 <div class="text-end">
-                  <h3 class="d-inline">3</h3>
+                  <h3 class="d-inline"><?= $compteurs?></h3>
                 </div>
               </div>
             </div>

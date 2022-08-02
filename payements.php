@@ -1,4 +1,11 @@
-<?php include'headder.php' ?>                       <!-- appel le fichier headder -->
+<?php include'headder.php';
+if(!$_SESSION['email']){
+  header('location:indexs.php');
+}
+
+
+
+?>                       <!-- appel le fichier headder -->
   <body>
     <main>
    

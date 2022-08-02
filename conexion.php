@@ -1,2 +1,3 @@
 <?php 
-$conn= mysqli_connect('localhost','root','','youcode');?>
+$conn= mysqli_connect('localhost','root','','E-classe');
+?>
